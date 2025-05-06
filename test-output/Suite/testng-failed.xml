@@ -10,13 +10,13 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="validateRegis" invocation-numbers="1 2 3"/>
+          <include name="validateRegis"/>
         </methods>
       </class> <!-- tests.RegisterTest -->
       <class name="tests.LoginTest">
         <methods>
           <include name="tearDown"/>
-          <include name="loginFailureTest" invocation-numbers="1 2"/>
+          <include name="loginFailureTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- tests.LoginTest -->

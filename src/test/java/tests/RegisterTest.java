@@ -42,7 +42,7 @@ else if(conditio.equals("invalid")) {
 else if(conditio.equals("blank")) {
 	
 
-	String actt = driver.findElement(By.xpath("//*[@id=\\\"email-error\\")).getText();
+	String actt = driver.findElement(By.xpath("//*[@id=\'email-error\']")).getText();
 
 		
 	Assert.assertEquals( actt, "Please enter a valid email address.");
@@ -51,10 +51,10 @@ else if(conditio.equals("blank")) {
 else if(conditio.equals("LongEmail")) {
 	
 	
-	String act = driver.findElement(By.xpath("//*[@id=\\\"email-error\\")).getText();
+	String act = driver.findElement(By.xpath("//*[@id=\'email-error\']")).getText();
 
 		
-	Assert.assertEquals( act, "Please enter a email address.");
+	Assert.assertEquals( act, "Please enter a valid email address.");
 	
 }
 		

@@ -1,6 +1,7 @@
 package tests;
 
 import base.BaseClass;
+
 import org.testng.annotations.Test;
 import pages.LoginPage;
 import utils.ConfigReader;
