@@ -31,7 +31,13 @@ import utils.ConfigReader;
 
         @Test (dataProvider = "loginData", dataProviderClass  =ExcelUtil.class )
         public void loginFailureTest(String user, String pass,String condition) {
+        	
+     	   String url = ConfigReader.get("url");
+      	    driver.get(url);
+        	
         	lp.login(user,pass,condition);
+        	
+        
         	
        if(condition.equals("invalid"))
        {

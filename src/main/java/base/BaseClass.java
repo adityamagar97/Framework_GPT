@@ -31,8 +31,7 @@ public class BaseClass {
     	        throw new RuntimeException("Unsupported browser: " + browser);
     	    }
 
-    	    String url = ConfigReader.get("url");
-    	    driver.get(url);
+    	 
     	    lp = new LoginPage(driver);
     	    rp = new RegisterPage(driver);
     	}
